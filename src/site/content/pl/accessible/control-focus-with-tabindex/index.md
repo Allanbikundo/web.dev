@@ -9,7 +9,7 @@ description: |
   built-in for free. If you're building custom interactive components, use
   tabindex to ensure that they're keyboard accessible.
 translation: none
-translated: 2020-08-06
+translated: 2020-20-20
 ---
 
 Native HTML elements such as `<button>` or `<input>` have keyboard accessibility
