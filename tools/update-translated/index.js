@@ -9,6 +9,8 @@
 
 const fs = require('fs').promises;
 const path = require('path');
+const util = require('util');
+const exec = util.promisify(require('child_process').exec);
 // const moment = require('moment');
 
 
@@ -69,8 +71,8 @@ const run = async () => {
     await fs.writeFile(changedFile, newContents);
 
     // Add the file to the current commit.
-    // await exec(`git add ${changedFile}`);
-    // console.log(`${MSG_UPDATE} ${chalk.cyan(changedFile)}`);
+    await exec(`git add ${changedFile}`);
+    console.log(`${changedFile} added to commit`);
   }
 
 

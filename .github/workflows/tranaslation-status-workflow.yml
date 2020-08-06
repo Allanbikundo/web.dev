@@ -16,8 +16,8 @@ jobs:
         with:
           node-version: '12.x'
 
-      # - name: Install
-      #   run: npm ci
+      - name: Install
+        run: npm ci
 
       - name: files
         id: files
@@ -28,11 +28,11 @@ jobs:
       - name: translated
         run: npm run translated -- ${{ steps.files.outputs.all }}
 
-      - name: Update resources
-        uses: test-room-7/action-update-file@v1
-        with:
-          file-path:  ${{ steps.files.outputs.all[0] }}
-          commit-msg: Update resources
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Update resources
+      #   uses: test-room-7/action-update-file@v1
+      #   with:
+      #     file-path:  ${{ steps.files.outputs.all[0] }}
+      #     commit-msg: Update resources
+      #     github-token: ${{ secrets.GITHUB_TOKEN }}
 
 
