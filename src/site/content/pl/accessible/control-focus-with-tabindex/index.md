@@ -3,7 +3,7 @@ layout: post
 title: Control focus with tabindex
 authors:
   - robdodson
-date: 2018-11-19
+date: 2018-11-20
 description: |
   Native HTML elements such as <button> or <input> have keyboard accessibility
   built-in for free. If you're building custom interactive components, use
