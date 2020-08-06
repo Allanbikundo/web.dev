@@ -71,7 +71,9 @@ const run = async () => {
     await fs.writeFile(changedFile, newContents);
 
     // Add the file to the current commit.
-    await exec(`git add ${changedFile}`);
+    await exec(`git branch --show-current`);
+    //await exec(`git add ${changedFile}`);
+    //await exec(`git ${changedFile}`);
     console.log(`${changedFile} added to commit`);
   }
 
