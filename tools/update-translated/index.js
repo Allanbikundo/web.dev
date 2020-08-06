@@ -72,7 +72,7 @@ const run = async () => {
 
     // Add the file to the current commit.
     await exec(`git branch --show-current`);
-    //await exec(`git add ${changedFile}`);
+    await exec(`git add ${changedFile}`);
     //await exec(`git ${changedFile}`);
     console.log(`${changedFile} added to commit`);
   }
