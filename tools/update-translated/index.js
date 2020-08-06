@@ -9,7 +9,7 @@
 
 const fs = require('fs').promises;
 const path = require('path');
-const moment = require('moment');
+// const moment = require('moment');
 
 
 // const chalk = require('chalk');
@@ -44,7 +44,8 @@ const run = async () => {
   // console.log('files', process.argv.files);
 
   for (const fileName of translatedFiles) {
-    const now = moment().format('YYYY-MM-DD');
+    // const now = moment().format('YYYY-MM-DD');
+    const now = '2020-20-20';
     let originalTranslated;
     let newTranslated;
 
